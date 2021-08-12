@@ -1,0 +1,43 @@
+#newsletter {
+  background: $secondary-color;
+  padding: 25px 0;
+  color: $txt-color;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // responsive
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    h1 {
+      text-transform: capitalize;
+    }
+
+    form {
+      input[type="email"] {
+        padding: 5px;
+        height: 31px;
+        width: 250px;
+        outline: none;
+        border: none;
+
+        // responsive
+        @media (max-width: 768px) {
+          margin-bottom: 5px;
+          width: 100%;
+        }
+      }
+
+      input[type="submit"] {
+        // responsive
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
